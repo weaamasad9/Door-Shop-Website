@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+	border: 1px;
+    background-color: #3ca5c8;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+div#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#myChart {
+    width:100%; 
+    max-width:600px; 
+    height:500px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 100px;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f1f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+	align-items: center;
+	width: 100%;
+    margin-top: 20px;
+}
+
+
+textarea {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 5px;
+    resize: none;
+}
+
+img#rhino {
+    width: 100;
+    height: 100;
+    border: 2px solid #2c3e50;
+    border-radius: 100%;
+}
+
+img#duo-panel-door{
+    width: 200;
+    height: 400;
+    border-radius: 2%;
+}
+
+img#long-lines-door{
+    width: 200;
+    height: 400;
+    border-radius: 2%;
+}
+
+img#width-lines-door{
+    width: 200;
+    height: 400;
+    border-radius: 2%;
+}
+
+img#smooth-door{
+    width: 200;
+    height: 400;
+    border-radius: 2%;
+}
+
+img#duo-panel-door:hover {
+	transition: transform 1s;
+	transform: scale(1.5);
+}
+
+img#long-lines-door:hover {
+	transition: transform 1s;
+	transform: scale(1.5);
+}
+
+img#width-lines-door:hover {
+	transition: transform 1s;
+	transform: scale(1.5);
+}
+
+img#smooth-door:hover {
+	transition: transform 1s;
+	transform: scale(1.5);
+}
+
+input#reset{
+    position: absolute;
+    margin-left: 68%;
+}

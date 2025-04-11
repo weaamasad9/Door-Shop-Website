@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>Rhino's import and marketing of doors</title>
+        <script src = "https://www.gstatic.com/charts/loader.js"></script>
+        <script src = "businessLogic.js"></script>
+		<script src = "dataAccess.js"></script>
+        <link rel = "stylesheet" href = "css.css">
+    </head>
+    <body>
+        <div id = "header">
+            <h1>Welcome to Rhino's import and marketing of doors</h1>
+            <img id = "rhino" src = "rhino.png">
+        </div>
+        <h3>Please fill in your info</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        First name: <input type = "text" id = "fname">
+                    </td>
+                    <td>
+                        Last name: <input type = "text" id = "lname">
+                    </td>
+                    <td>
+					
+                        Cell number: <input type = "text"  id = "cell">
+                    </td>
+                    <td>
+                        Email: <input type = "text" id = "email">
+                    </td>
+                </tr>
+            </table>
+
+            </br><h3>Choose which models do you want</h3></br>
+
+            <table>
+                <tr>
+                    <td>
+                        Duo-panel
+                    </td>
+                    <td>
+                        Longitudinal lines  
+                    </td>
+                    <td>
+                        Width lines
+                    </td>
+                    <td>
+                        Smooth
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img id = "duo-panel-door" src = "duo-panel-white.png">
+                    </td>
+                    <td>
+                        <img id = "long-lines-door" src = "long-lines-white.png">
+                    </td>
+                    <td>
+                        <img id = "width-lines-door" src = "width-lines-white.png">
+                    </td>
+                    <td>
+                        <img id = "smooth-door" src = "smooth-white.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        </br>Type: <select id = "type-duo-panel">
+                            <option value = "stanley">Stanley</option>
+                            <option value = "polymer">Polymer</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        </br>Type: <select id = "type-long-lines">
+                            <option value = "stanley">Stanley</option>
+                            <option value = "polymer">Polymer</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        </br>Type: <select id = "type-width-lines">
+                            <option value = "stanley">Stanley</option>
+                            <option value = "polymer">Polymer</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        </br>Type: <select id = "type-smooth">
+                            <option value = "stanley">Stanley</option>
+                            <option value = "polymer">Polymer</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Width: <select id = "width-duo-panel">
+                            <option value = "63">63</option>
+                            <option value = "71">71</option>
+                            <option value = "76">76</option>
+                            <option value = "81">81</option>
+                            <option value = "86">86</option>
+                            <option value = "91">91</option>
+                        </select> 
+                    </td>
+
+                    <td>
+                        Width: <select id = "width-long-lines">
+                            <option value = "63">63</option>
+                            <option value = "71">71</option>
+                            <option value = "76">76</option>
+                            <option value = "81">81</option>
+                            <option value = "86">86</option>
+                            <option value = "91">91</option>
+                        </select> 
+                    </td>
+
+                    <td>
+                        Width: <select id = "width-width-lines">
+                            <option value = "63">63</option>
+                            <option value = "71">71</option>
+                            <option value = "76">76</option>
+                            <option value = "81">81</option>
+                            <option value = "86">86</option>
+                            <option value = "91">91</option>
+                        </select> 
+                    </td>
+
+                    <td>
+                        Width: <select id = "width-smooth">
+                            <option value = "63">63</option>
+                            <option value = "71">71</option>
+                            <option value = "76">76</option>
+                            <option value = "81">81</option>
+                            <option value = "86">86</option>
+                            <option value = "91">91</option>
+                        </select> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Color: <select id = "color-duo-panel" onchange = "changeImageDouPanel()">
+                            <option value = "white">White</option>
+                            <option value = "cream">Cream</option>
+                        </select>
+                    </td>
+                    
+                    <td>
+                        Color: <select id = "color-long-lines" onchange = "changeImageLongLines()">
+                            <option value = "white">White</option>
+                            <option value = "cream">Cream</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        Color: <select id = "color-width-lines" onchange = "changeImageWidthLines()">
+                            <option value = "white">White</option>
+                            <option value = "cream">Cream</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        Color: <select id = "color-smooth" onchange = "changeImageSmooth()">
+                            <option value = "white">White</option>
+                            <option value = "cream">Cream</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Quantity: <input type = "number" id = "quantity-duo-panel" min = "0" max = "10" value="0">
+                    </td>
+                    <td>
+                        Quantity: <input type = "number" id = "quantity-long-lines" min = "0" max = "10" value="0">
+                    </td>
+                    <td>
+                        Quantity: <input type = "number" id = "quantity-width-lines" min = "0" max = "10" value="0">
+                    </td>
+                    <td>
+                        Quantity: <input type = "number" id = "quantity-smooth" min = "0" max = "10" value="0">
+                    </td>
+                </tr>
+            </table>
+            <div id="myChart"></div>
+            <script src = "businessLogic.js"></script>
+            <b>To leave feedback please press here:</b> <a href="googleForm.html"><img id = "rhino" src = "rhino.png"></a>
+
+            </br></br></br><h3>If you have any questions or concerns, please write it down here</h3></br>
+            <textarea id = "text" rows = "10" cols = "50"></textarea></br></br>
+            <input type = "button" value = "send order" onclick="GetClientAndOrderInfo()">
+            <input id = "reset" type = "reset" value = "reset order">
+        </form>
+    </body>
+</html>
