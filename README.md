@@ -40,9 +40,6 @@ The application follows a **4-layer architecture**:
 
 ---
 
-## 📸 Screenshots
-
-> You can add UI screenshots here after running the page
 
 ---
 
@@ -55,4 +52,4 @@ This project was built as a personal frontend mini-project during my studies, fo
 ## 👤 Author
 
 Developed by a second-year Software Engineering student at Braude College,  
-graduate of the **Magshimim Cyber Education Program**, with high motivation, self-learning ability, and love for challenges and building projects from scratch.
+ with high motivation, self-learning ability, and love for challenges and building projects from scratch.
